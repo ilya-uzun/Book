@@ -1,6 +1,7 @@
 <resources>
     <string name="name">Book</string>
-    <string name="nameBook">Название книги</string>
+    <string name="book">Книги</string>
+    <string name="nameBook">Название книг</string>
     <string name="author">Автор</string>
     <string name="numberOfPages">Количество страниц</string>
 </resources>

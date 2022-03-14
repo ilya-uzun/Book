@@ -6,6 +6,7 @@ import jdk.nashorn.internal.objects.annotations.Getter;
 import org.telegram.telegrambots.extensions.bots.commandbot.TelegramLongPollingCommandBot;
 import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.Update;
+import telegram.commands.service.StartCommand;
 
 import java.util.HashMap;
 import java.util.List;

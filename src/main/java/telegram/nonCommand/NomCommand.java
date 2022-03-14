@@ -1,9 +1,15 @@
-package telegram.nonCommand;
+import exceptions.IllegalSettingsException;
+import telegram.Bot;
+import telegram.nonCommand.Settings;
+
+/**
+ * Обработка сообщения, не являющегося командой (т.е. обычного текста не начинающегося с "/")
+ */
 
 public class NomCommand {
 
     public String nonCommandExecute(Long chatId, String userName, String text){
-        Sttings settings;
+        Settings settings;
         String anwer;
         try{
             //создаём настройки из сообщения пользователя

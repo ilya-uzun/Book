@@ -7,6 +7,8 @@ import org.telegram.telegrambots.extensions.bots.commandbot.TelegramLongPollingC
 import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import telegram.commands.service.StartCommand;
+import telegram.nonCommand.Settings;
+
 
 import java.util.HashMap;
 import java.util.List;

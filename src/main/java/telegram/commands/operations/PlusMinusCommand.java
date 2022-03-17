@@ -1,12 +1,13 @@
 import org.telegram.telegrambots.meta.api.objects.Chat;
 import org.telegram.telegrambots.meta.api.objects.User;
 import org.telegram.telegrambots.meta.bots.AbsSender;
-import ru.taksebe.telegram.mentalCalculation.enums.OperationEnum;
+import enums.OperationEnum;
 
 /**
  * Команда получение файла с заданиями на сложение и вычитание
  */
 public class PlusMinusCommand extends OperationCommand {
+    private Logger logger = LoggerFactory.getLogger(PlusMinusCommand.class);
 
     public PlusMinusCommand(String identifier, String description) {
         super(identifier, description);
@@ -14,10 +15,13 @@ public class PlusMinusCommand extends OperationCommand {
 
     @Override
     public void execute(AbsSender absSender, User user, Chat chat, String[] strings) {
-        //формируем имя пользователя - поскольку userName может быть не заполнено, для этого случая используем имя и фамилию пользователя
-        String userName = (user.getUserName() != null) ? user.getUserName() :
-                String.format("%s %s", user.getLastName(), user.getFirstName());
-        //обращаемся к методу суперкласса для формирования файла на сложение и вычитание (за это отвечает метод getPlusMinus() перечисления OperationEnum) и отправки его пользователю
-        sendAnswer(absSender, chat.getId(), OperationEnum.getPlusMinus(), this.getDescription(), this.getCommandIdentifier(), userName);
+        String userName = Utils.getUserName(user);
+
+        logger.debug(String.format("Пользователь %s. Начато выполнение команды %s", userName,
+                this.getCommandIdentifier()));
+        sendAnswer(absSender, chat.getId(), OperationEnum.getPlusMinus(), this.getDescription(),
+                this.getCommandIdentifier(), userName);
+        logger.debug(String.format("Пользователь %s. Завершено выполнение команды %s", userName,
+                this.getCommandIdentifier()));
     }
 }

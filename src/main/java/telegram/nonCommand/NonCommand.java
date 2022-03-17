@@ -6,7 +6,7 @@ import telegram.nonCommand.Settings;
  * Обработка сообщения, не являющегося командой (т.е. обычного текста не начинающегося с "/")
  */
 
-public class NomCommand {
+public class NonCommand {
 
     public String nonCommandExecute(Long chatId, String userName, String text){
         Settings settings;

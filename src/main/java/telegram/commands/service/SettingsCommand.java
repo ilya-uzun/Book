@@ -6,9 +6,9 @@ import org.slf4j.LoggerFactory;
 import org.telegram.telegrambots.meta.api.objects.Chat;
 import org.telegram.telegrambots.meta.api.objects.User;
 import org.telegram.telegrambots.meta.bots.AbsSender;
-import ru.taksebe.telegram.mentalCalculation.Utils;
-import ru.taksebe.telegram.mentalCalculation.telegram.Bot;
-import ru.taksebe.telegram.mentalCalculation.telegram.nonCommand.Settings;
+import Utils;
+import telegram.Bot;
+import telegram.nonCommand.Settings;
 
 /**
  * Команда получения текущих настроек

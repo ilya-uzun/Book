@@ -8,11 +8,11 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.InputFile;
 import org.telegram.telegrambots.meta.bots.AbsSender;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-import ru.taksebe.telegram.mentalCalculation.calculation.ArithmeticService;
-import ru.taksebe.telegram.mentalCalculation.calculation.Calculator;
-import ru.taksebe.telegram.mentalCalculation.enums.OperationEnum;
-import ru.taksebe.telegram.mentalCalculation.fileProcessor.WordFileProcessorImpl;
-import ru.taksebe.telegram.mentalCalculation.telegram.Bot;
+import calculation.ArithmeticService;
+import calculation.Calculator;
+import enums.OperationEnum;
+import fileProcessor.WordFileProcessorImpl;
+import telegram.Bot;
 
 import java.io.FileInputStream;
 import java.io.IOException;

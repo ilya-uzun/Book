@@ -3,9 +3,9 @@ package calculation;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.experimental.FieldDefaults;
-import ru.taksebe.telegram.mentalCalculation.enums.OperationEnum;
-import ru.taksebe.telegram.mentalCalculation.fileProcessor.WordFileProcessorImpl;
-import ru.taksebe.telegram.mentalCalculation.telegram.nonCommand.Settings;
+import enums.OperationEnum;
+import fileProcessor.WordFileProcessorImpl;
+import telegram.nonCommand.Settings;
 
 import java.io.FileInputStream;
 import java.io.IOException;

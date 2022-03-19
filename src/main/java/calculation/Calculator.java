@@ -1,6 +1,6 @@
 package calculation;
 
-import ru.taksebe.telegram.mentalCalculation.enums.OperationEnum;
+import enums.OperationEnum;
 
 import java.util.HashSet;
 import java.util.Random;
